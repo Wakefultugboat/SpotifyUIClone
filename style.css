@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    background-color:aliceblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Bebas',sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type:none;
+    height:70px;
+    background-color:black;
+    color:white;
+}
+nav ul li{
+    padding: 0px 13px;
+}
+.brand img{
+    width:50px;
+    padding: 0px 10px;
+}
+.brand{
+    display:flex;
+    align-self: center;
+    font-weight: bolder;
+    font-size:1.4rem;
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color:white;
+    font-family: 'Bebas',sans-serif;
+    display: flex;
+    margin: 13px auto;
+    width:75%;
+    border-radius: 12px;
+    padding:35px;
+    background-image: url('music5.webp');
+    background-size: cover;  /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+}
+.bottom{
+    position: sticky;
+    height: 140px;
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin:12px 0px;
+}
+.icons i{
+    cursor:pointer;
+}
+#ProgressBar{
+    width: 80vw;
+    text-align: center;
+}
+.songItem{
+    height:50px;
+    display:flex;
+    background-color:white;
+    width:80%;
+    color:black;
+    margin: 12px 0px;
+}
+.songItem img{
+
+}
