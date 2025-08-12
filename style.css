@@ -1,79 +1,103 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-body{
-    background-color:aliceblue;
-}
-*{
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-nav{
-    font-family: 'Bebas',sans-serif;
+
+body {
+    background-color: aliceblue;
+    font-family: 'Bebas Neue', sans-serif;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
-    list-style-type:none;
-    height:70px;
-    background-color:black;
-    color:white;
+    list-style: none;
+    height: 70px;
+    background-color: black;
+    color: white;
 }
-nav ul li{
-    padding: 0px 13px;
+
+nav ul li {
+    padding: 0 13px;
+    cursor: pointer;
 }
-.brand img{
-    width:50px;
-    padding: 0px 10px;
+
+.brand img {
+    width: 50px;
+    padding: 0 10px;
 }
-.brand{
-    display:flex;
-    align-self: center;
+
+.brand {
+    display: flex;
+    align-items: center;
     font-weight: bolder;
-    font-size:1.4rem;
+    font-size: 1.4rem;
 }
-.container{
+
+.container {
     min-height: 70vh;
     background-color: black;
-    color:white;
-    font-family: 'Bebas',sans-serif;
+    color: white;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin: 13px auto;
-    width:75%;
+    width: 75%;
     border-radius: 12px;
-    padding:35px;
+    padding: 35px;
     background-image: url('music5.webp');
-    background-size: cover;  /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.bottom{
+
+.songItem {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 8px;
+    width: 80%;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.songItem:hover {
+    background-color: #ddd;
+}
+
+.songItem img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.bottom {
     position: sticky;
+    bottom: 0;
     height: 140px;
     background-color: black;
-    color:white;
-    display:flex;
+    color: white;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.icons{
-    margin:12px 0px;
-}
-.icons i{
-    cursor:pointer;
-}
-#ProgressBar{
-    width: 80vw;
-    text-align: center;
-}
-.songItem{
-    height:50px;
-    display:flex;
-    background-color:white;
-    width:80%;
-    color:black;
-    margin: 12px 0px;
-}
-.songItem img{
 
+.icons {
+    margin: 12px 0;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#ProgressBar {
+    width: 80vw;
 }
